@@ -1,0 +1,42 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 100%;
+  background-color: transparent;
+
+
+  .nav-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .top-nav-burger {
+      position: relative;
+      background-color: black;
+      height: 4px;
+      width: 24px;
+
+      &::after, &::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 24px;
+        left: 0;
+        right: 0;
+        background-color: black;
+      }
+
+      &::after { top: 8px }
+      &::before { top: -8px }
+
+      .nav-mobile {
+        display: none;
+      }
+    }
+
+
+  }
+}

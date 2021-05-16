@@ -1,6 +1,7 @@
 // COLOR
 
 $blue: #004e63;
+$grey: #ebebeb;
 
 
 * {
@@ -17,7 +18,7 @@ ul {
   list-style: none;
 }
 
-section {
+section:not(.technologies) {
   max-width: 75%;
   margin: 40px auto;
 }

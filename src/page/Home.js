@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import MobileNavigation from "../components/Navigation/MobileNavigation";
 import DesktopNavigation from "../components/Navigation/DesktopNavigation";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
+import Technologies from "../components/Technologies/Technologies";
 
 const Home = () => {
 
@@ -20,6 +21,7 @@ const Home = () => {
         <main className="main home">
             {isMobile ? <MobileNavigation /> : <DesktopNavigation />}
             <HeroBanner />
+            <Technologies />
         </main>
     );
 }

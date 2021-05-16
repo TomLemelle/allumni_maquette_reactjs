@@ -1,0 +1,34 @@
+.hero-banner {
+  margin-top: 0;
+}
+
+.wrapper-hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  li {
+
+    h1 {
+      font-family: "Helvetica", sans-serif;
+      font-weight: normal;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 8px 0;
+    }
+
+      img {
+        width: 280px;
+      }
+
+      p {
+        color: $blue;
+        font-size: 16px;
+        font-family: "Helvetica", sans-serif;
+        font-weight: normal;
+        text-align: left;
+        margin-top: 16px;
+      }
+
+  }
+}

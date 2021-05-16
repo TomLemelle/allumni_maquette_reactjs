@@ -7,7 +7,7 @@ const MobileNavigation = () => {
             <header className={"header"}>
                 <nav className="nav-header">
                     <NavLink exact to={"/"} className={"logo-mobile"}>
-                        <img src="" alt="logo allumni"/>
+                        <img src="./assets/img/logo-nav.jpg" alt="logo allumni"/>
                     </NavLink>
 
                     <div className={"top-nav-burger"}>

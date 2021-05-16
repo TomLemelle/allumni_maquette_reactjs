@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import MobileNavigation from "../components/Navigation/MobileNavigation";
 import DesktopNavigation from "../components/Navigation/DesktopNavigation";
+import HeroBanner from "../components/HeroBanner/HeroBanner";
 
 const Home = () => {
 
@@ -18,6 +19,7 @@ const Home = () => {
     return (
         <main className="main home">
             {isMobile ? <MobileNavigation /> : <DesktopNavigation />}
+            <HeroBanner />
         </main>
     );
 }

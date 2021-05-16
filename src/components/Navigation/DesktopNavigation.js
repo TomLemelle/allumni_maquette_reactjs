@@ -7,7 +7,7 @@ const DesktopNavigation = () => {
             <header className={"header"}>
                 <nav className={"top-nav"}>
                     <NavLink exact to={"/"} className={"logo-desktop"}>
-                        <img src="#" alt="logo allumni"/>
+                        <img src="./assets/img/logo-nav.jpg" alt="logo allumni"/>
                     </NavLink>
 
                     <div className="wrapper-link">

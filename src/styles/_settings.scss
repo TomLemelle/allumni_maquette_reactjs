@@ -18,7 +18,7 @@ ul {
   list-style: none;
 }
 
-section:not(.technologies) {
+section, footer:not(.technologies) {
   max-width: 75%;
-  margin: 40px auto;
+  margin: 60px auto;
 }

@@ -1,0 +1,41 @@
+.footer {
+
+  .footer-list {
+
+    li {
+      padding: 10px 0;
+      h2 {
+        font-family: 'Helvetica', sans-serif;
+        font-size: 30px;
+        font-weight: normal;
+        color: $blue;
+      }
+
+      .icon-footer {
+        width: 24px;
+        height: 24px;
+      }
+
+      span {
+        padding-left: 10px;
+        font-family: 'Helvetica', sans-serif;
+        font-size: 15px;
+        font-weight: normal;
+        color: black;
+      }
+
+      .location-map {
+        width: 100%;
+      }
+      .logo-footer {
+        width: 50%;
+      }
+    }
+  }
+}
+
+.footer-last-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

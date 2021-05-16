@@ -3,6 +3,8 @@ import MobileNavigation from "../components/Navigation/MobileNavigation";
 import DesktopNavigation from "../components/Navigation/DesktopNavigation";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 import Technologies from "../components/Technologies/Technologies";
+import Developer from "../components/Developer/Developer";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
 
@@ -22,6 +24,8 @@ const Home = () => {
             {isMobile ? <MobileNavigation /> : <DesktopNavigation />}
             <HeroBanner />
             <Technologies />
+            <Developer />
+            <Footer />
         </main>
     );
 }

@@ -4,13 +4,13 @@ const Developer = () => {
     return (
         <section className="developer">
             <ul className="wrapper-developer">
-                <li>
+                <li className={"first-li"}>
                     <img src="./assets/img/developer.jpg" alt="image developer"/>
                 </li>
-                <li>
+                <li className={"second-li"}>
                     <h3>Developer</h3>
                 </li>
-                <li>
+                <li className={"third-li"}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit,
                         vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus,
@@ -19,7 +19,7 @@ const Developer = () => {
                         amet elit iaculis pretium sit amet quis magna.
                     </p>
                 </li>
-                <li>
+                <li className={"last-li"}>
                     <a href="https://linkedin.com">LinkedIn</a>
                 </li>
 

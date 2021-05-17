@@ -1,0 +1,33 @@
+@media screen and (min-width: 1300px) {
+    .wrapper-developer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "image title"
+        "image text"
+        "image button";
+        align-items: center;
+        grid-row-gap: 10px;
+    
+        .first-li {
+            grid-area: image;
+    
+            img {
+                width: 446px;
+                height: 312px;
+            }
+        }
+        .second-li {
+            grid-area: title;
+            justify-self: flex-start;
+        }
+        .third-li {
+            grid-area: text;
+        }
+        .last-li {
+            grid-area: button;
+            justify-self: stretch;
+        }
+    }
+}

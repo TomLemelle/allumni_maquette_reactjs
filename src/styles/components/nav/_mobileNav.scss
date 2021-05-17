@@ -8,10 +8,16 @@
 
 
   .nav-header {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    .logo-mobile {
+      position: absolute;
+      left: 12%;
+    }
 
     img {
       width: 61px;
@@ -20,12 +26,14 @@
 
     .top-nav-burger {
       position: relative;
+      z-index: 1000;
       background-color: black;
-      height: 4px;
+      height: 5px;
       width: 24px;
+      left: 80%;
+      position: absolute;
 
-      &::after, &::before {
-        content: "";
+      .top, .middle, .bottom{
         position: absolute;
         height: 4px;
         width: 24px;
@@ -34,14 +42,35 @@
         background-color: black;
       }
 
-      &::after { top: 8px }
-      &::before { top: -8px }
+      .top { top: 8px }
+      .middle { top: 0px }
+      .bottom { top: -8px }
+    }
+
+    .burger-link {
+      position: relative;
+      z-index: 900;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      top: 16px;
+
+      background-color: $blue;
 
       .nav-mobile {
-        display: none;
+        cursor: pointer;
+        padding: 10px 10px;
+        color: $grey;
+        text-align: left;
       }
     }
 
-
   }
+}
+
+.show-burger + .burger-link {
+  display: block;
+}
+.hide-burger + .burger-link {
+  display: none;
 }

@@ -22,3 +22,29 @@ section, footer:not(.technologies) {
   max-width: 75%;
   margin: 60px auto;
 }
+
+@media screen and (min-width: 768px) {
+  section.technologies {
+    max-width: none;
+    margin: auto;
+  }
+}
+
+@mixin createColumnGrid($nb, $size) {
+  display: grid !important;
+  grid-template-columns: repeat($nb, $size);
+  justify-items: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  .grid-column-2 {
+    @include createColumnGrid(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-column-3 {
+    @include createColumnGrid(3, 1fr);
+  }
+}

@@ -11,19 +11,19 @@ const DesktopNavigation = () => {
                     </NavLink>
 
                     <div className="wrapper-link">
-                        <NavLink exact to={"#technologies"} className={"nav-desktop"}>
+                        <NavLink exact to={"#technologies"} className={"nav-desktop"} activeClassName={"link-active"}>
                             Technologies
                         </NavLink>
 
-                        <NavLink exact to={"#developer"} className={"nav-desktop"}>
+                        <NavLink exact to={"#developer"} className={"nav-desktop"} activeClassName={"link-active"}>
                             Developer
                         </NavLink>
 
-                        <NavLink exact to={"#release_date"} className={"nav-desktop"}>
+                        <NavLink exact to={"#release_date"} className={"nav-desktop"} activeClassName={"link-active"}>
                             Release Date
                         </NavLink>
 
-                        <NavLink exact to={"/about"} className={"nav-desktop"}>
+                        <NavLink exact to={"/about"} className={"nav-desktop"} activeClassName={"link-active"}>
                             About
                         </NavLink>
 

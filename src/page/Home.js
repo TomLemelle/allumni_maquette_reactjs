@@ -17,7 +17,7 @@ const Home = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, [])
 
-    let isMobile = width <= 1000;
+    let isMobile = width <= 768;
 
     return (
         <main className="main home">

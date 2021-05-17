@@ -6,7 +6,6 @@
 @import "./components/nav/desktopNav";
 
 
-
 // HEROBANNER MOBILE
 @import "./components/heroBanner/heroBanner";
 // HEROBANNER DESKTOP
@@ -18,7 +17,8 @@
 
 // DEVELOPER MOBILE
 @import "./components/developer/developer";
-
+// DEVELOPER DESKTOP
+@import "./components/developer/MQ-developer";
 
 
 // FOOTER MOBILE

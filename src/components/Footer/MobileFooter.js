@@ -4,23 +4,23 @@ const Footer = () => {
     return (
         <footer className="footer">
             <ul className="footer-list">
-                <li>
+                <li className={"first-li"}>
                     <h2>Project Title</h2>
                 </li>
-                <li>
+                <li className={"second-li"}>
                     <img src="./assets/img/telephone.jpg" alt="icon téléphone" className={"icon-footer"}/>
                     <span>00 00 00 00 00</span>
                 </li>
-                <li>
+                <li className={"third-li"}>
                     <img src="./assets/img/mail.jpg" alt="icon mail" className={"icon-footer"}/>
                     <span>email@gmail.com</span>
                 </li>
-                <li>
+                <li className={"fourth-li"}>
                     <img src="./assets/img/location.jpg" alt="icon carte" className={"icon-footer"}/>
                     <span>72 Rue de la République, 76140 Le Petit-Quevilly, France</span>
                 </li>
 
-                <li>
+                <li className={"fifth-li"}>
                     <img src="./assets/img/map-location.jpg" alt="image location" className={"location-map"}/>
                 </li>
                 <li className={"footer-last-li"}>

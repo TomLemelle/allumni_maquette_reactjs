@@ -4,7 +4,7 @@ import DesktopNavigation from "../components/Navigation/DesktopNavigation";
 import HeroBanner from "../components/HeroBanner/HeroBanner";
 import Technologies from "../components/Technologies/Technologies";
 import Developer from "../components/Developer/Developer";
-import Footer from "../components/Footer/Footer";
+import MobileFooter from "../components/Footer/MobileFooter";
 
 const Home = () => {
 
@@ -25,7 +25,7 @@ const Home = () => {
             <HeroBanner />
             <Technologies />
             <Developer />
-            <Footer />
+            <MobileFooter />
         </main>
     );
 }

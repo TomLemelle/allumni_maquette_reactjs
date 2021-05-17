@@ -1,0 +1,39 @@
+@media screen and (min-width: 1000px) {
+    .footer {
+        .footer-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            li {
+
+                span {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .first-li {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-basis: 50%;
+
+                h2 {
+                    padding: 10px 0;
+                }
+            }
+
+            .footer-last-li {
+                display: flex;
+                justify-content: center;
+                flex-basis: 50%;
+
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

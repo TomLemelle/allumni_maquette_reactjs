@@ -5,6 +5,7 @@ import HeroBanner from "../components/HeroBanner/HeroBanner";
 import Technologies from "../components/Technologies/Technologies";
 import Developer from "../components/Developer/Developer";
 import MobileFooter from "../components/Footer/MobileFooter";
+import DesktopFooter from "../components/Footer/DesktopFooter";
 
 const Home = () => {
 
@@ -17,15 +18,16 @@ const Home = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, [])
 
-    let isMobile = width <= 768;
+    let isNavMobile = width <= 768;
+    let isFooterMobile = width <= 1000;
 
     return (
         <main className="main home">
-            {isMobile ? <MobileNavigation /> : <DesktopNavigation />}
+            {isNavMobile ? <MobileNavigation /> : <DesktopNavigation />}
             <HeroBanner />
             <Technologies />
             <Developer />
-            <MobileFooter />
+            {isFooterMobile ? <MobileFooter /> : <DesktopFooter />}
         </main>
     );
 }

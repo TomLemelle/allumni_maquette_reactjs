@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+    .wrapper-hero-banner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "title image"
+        "text image";
+        justify-items: center;
+        align-items: center;
+
+        .first-li {
+            grid-area: title;
+            align-self: flex-end;
+        }
+        .second-li {
+            grid-area: image;
+        }
+        .last-li {
+            grid-area: text;
+            align-self: flex-start;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
